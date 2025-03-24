@@ -1,0 +1,120 @@
+
+/* Navbar Section */
+.navbar-section {
+    background: #ffffff; /* Clean white background */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above content */
+    padding: 0; /* Remove default padding, let Bootstrap handle it */
+  }
+
+  /* Container (Bootstrap's Container fluid) */
+  .container-fluid {
+    max-width: 1400px; /* Wider max-width for a modern look */
+    padding: 0 2rem; /* Consistent padding */
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo {
+    font-size: 1.75rem; /* Slightly larger for prominence */
+    font-weight: 700; /* Bold for emphasis */
+    color: #2b6cb0; /* Modern blue */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo:hover {
+    color: #4299e1; /* Lighter blue on hover */
+  }
+  
+  .navbar-logo i {
+    margin-right: 0.5rem; /* Space between icon and text */
+    font-size: 1.5rem; /* Slightly smaller than text */
+    color: #2b6cb0; /* Match logo color */
+  }
+ /* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  padding: 0.75rem; /* 8px padding */
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Clip overflow */
+  background: transparent; /* Ensure no background interference */
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background: #2d3748; /* Dark slate */
+  height: 4px; /* Reasonable bar height */
+  width: 24px; /* Fit within padding */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Transformations when expanded */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+  
+  /* Navbar Navigation */
+  .navbar-navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Modern spacing between links */
+  }
+  
+  .nav-link {
+    position: relative;
+    font-size: 1.125rem; /* Readable size */
+    font-weight: 500; /* Medium weight for balance */
+    color: #2d3748 !important; /* Dark slate, override Bootstrap */
+    padding: 1rem 0; /* Vertical padding for larger click area */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .nav-link:hover {
+    color: #2b6cb0 !important; /* Blue on hover */
+  }
+  
+  /* Hover Effect with Underline Animation */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2b6cb0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }

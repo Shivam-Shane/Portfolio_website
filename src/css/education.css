@@ -1,0 +1,261 @@
+
+/* Education Section and Internship Section */
+
+/* Education and Certification Section */
+.Education-certification-section {
+    background: linear-gradient(to bottom, #edf2f7, #ffffff);
+    z-index: 40;
+    min-height: 100vh;
+    width: 100%;
+    padding: 6rem 0;
+    scroll-snap-align: start;
+    transition: opacity 0.8s ease-in-out;
+  }
+  
+  .eduation-container { /* Note: Typo 'eduation' should be 'education' in your JSX */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .Education-certification-section .education-row { /* Scoped class */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .Education-certification-section .education-col { /* Scoped class */
+    flex: 0 0 48%;
+    max-width: 48%;
+    min-width: 0;
+  }
+  
+  .Education-certification-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .Education-certification-section .mb-4 {
+    margin-bottom: 2rem;
+  }
+  
+  .Education-certification-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: #2b6cb0;
+  }
+  
+  .Education-certification-section .timeline {
+    position: relative;
+    padding: 1rem 0;
+  }
+  
+  .Education-certification-section .timeline-wrapper,
+  .Education-certification-section .timeline-wrapper-education {
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .Education-certification-section .timeline-wrapper::before,
+  .Education-certification-section .timeline-wrapper-education::before {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #e2e8f0;
+  }
+  
+  .Education-certification-section .timeline-yr,
+  .Education-certification-section .content-education {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: #2b6cb0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Education-certification-section .timeline-yr span,
+  .Education-certification-section .content-education span {
+    display: block;
+  }
+  
+  .Education-certification-section .content-education small {
+    font-size: 0.625rem;
+    display: block;
+    line-height: 1;
+  }
+  
+  .Education-certification-section .timeline-info {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .Education-certification-section .timeline-info:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Education-certification-section .timeline-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+  
+  .Education-certification-section .timeline-info h3 span {
+    color: #2b6cb0;
+  }
+  
+  .Education-certification-section .timeline-info h3 small {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #718096;
+    margin-top: 0.25rem;
+  }
+  
+  .Education-certification-section .timeline-info span {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .Education-certification-section .timeline-info a {
+    color: #2b6cb0;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .Education-certification-section .timeline-info a:hover {
+    color: #4299e1;
+    text-decoration: underline;
+  }
+  
+  .Education-certification-section .timeline-info p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .Education-certification-section {
+      padding: 4rem 0;
+    }
+  
+    .Education-certification-section .education-row {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  
+    .Education-certification-section .education-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .Education-certification-section .mobile-mt-2 {
+      margin-top: 2rem;
+    }
+  
+    .Education-certification-section .timeline-wrapper,
+    .Education-certification-section .timeline-wrapper-education {
+      padding-left: 4rem;
+    }
+  
+    .Education-certification-section .timeline-yr,
+    .Education-certification-section .content-education {
+      width: 50px;
+      height: 50px;
+      font-size: 0.75rem;
+    }
+  
+    .Education-certification-section .content-education small {
+      font-size: 0.5625rem;
+    }
+  
+    .Education-certification-section .timeline-info {
+      padding: 1rem;
+    }
+  
+    .Education-certification-section .timeline-info h3 {
+      font-size: 1.25rem;
+    }
+  
+    .Education-certification-section .timeline-info h3 small {
+      font-size: 0.75rem;
+    }
+  
+    .Education-certification-section .timeline-info p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Education-certification-section h2 {
+      font-size: 1.75rem;
+    }
+  
+    .Education-certification-section .timeline-wrapper,
+    .Education-certification-section .timeline-wrapper-education {
+      padding-left: 3.5rem;
+    }
+  
+    .Education-certification-section .timeline-yr,
+    .Education-certification-section .content-education {
+      width: 40px;
+      height: 40px;
+      font-size: 0.6875rem;
+    }
+  
+    .Education-certification-section .content-education small {
+      font-size: 0.5rem;
+    }
+  
+    .Education-certification-section .timeline-info {
+      padding: 0.75rem;
+    }
+  
+    .Education-certification-section .timeline-info h3 {
+      font-size: 1.125rem;
+    }
+  
+    .Education-certification-section .timeline-info h3 small {
+      font-size: 0.6875rem;
+    }
+  
+    .Education-certification-section .timeline-info p {
+      font-size: 0.8125rem;
+    }
+  }
+  
