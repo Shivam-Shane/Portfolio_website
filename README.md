@@ -70,8 +70,18 @@ This is a personal portfolio project, but I’m open to suggestions! Feel free t
 
 ## License
 
-This project is licensed under the [[Apache LICENSE 2.0](https://www.apache.org/licenses/LICENSE-2.0)].
+This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) License.
 
 ## Contact
 
-For any inquiries, reach out via the contact form on the website or email me at [shivam.hireme@gmail.com](mailto:shivam.hireme@gmail.com).
+For questions, suggestions, or support, reach out at 
+- **sk0551460@gmail.com** 
+- **shivam.hireme@gmail.com**.
+
+## Support the Project
+
+Help support continued development and improvements:
+
+- **Follow on LinkedIn**: Stay connected for updates – [LinkedIn Profile](https://www.linkedin.com/in/shivam-hireme/)
+- **Buy Me a Coffee**: Appreciate the project? [Buy Me a Coffee](https://buymeacoffee.com/shivamshane)
+- **Visit my Portfolio**: [Shivam's Portfolio](https://shivam-portfoliio.vercel.app/)
