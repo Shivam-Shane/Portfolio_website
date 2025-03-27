@@ -7,7 +7,7 @@ function NavbarComponent() {
     <section className="navbar-section" id="navbar-section">
       <Navbar expand="lg" className="py-0">
         <Container fluid>
-          <Navbar.Brand href="index.html" className="navbar-logo">
+          <Navbar.Brand href="/" className="navbar-logo">
             <i className="uil uil-user"></i> Shivam
           </Navbar.Brand>{' '}
           <Navbar.Toggle aria-controls="navbarNav" className="navbar-toggler">
