@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
-
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 function Chatbot() {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -177,7 +177,7 @@ function Chatbot() {
               onKeyPress={handleKeyPress}
             />
             <button onClick={sendMessage} className="send-btn">
-              Send
+            <FontAwesomeIcon icon={faPaperPlane} />
             </button>
           </div>
         </div>

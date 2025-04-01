@@ -79,7 +79,7 @@ function About({ setSpinnerVisible }) {
               </p>{' '}
               <div className="custom-btn-group mt-4">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1JxNZp_3Lu6ugCMFYGrmxy1KAQWmDojSu"
+                  href="https://drive.google.com/uc?export=download&id=1chtdO8Z_3mCFsQQ-LtONUvDgzpDP6xnn"
                   className="btn mr-lg-2 custom-btn"
                 >
                   <i className="uil uil-file-alt"></i> Download Resume
@@ -92,7 +92,7 @@ function About({ setSpinnerVisible }) {
                   Summarize Portfolio
                 </button>{' '}
               </div>
-              <span>-Last Updated: 20:03:2025</span>{' '}
+              <span>-Last Updated: 01:04:2025</span>{' '}
             </div>
           </div>
           <div className="col-lg-5 col-md-12 col-12">
