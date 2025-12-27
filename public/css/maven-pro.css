@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/maven-pro-400.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/maven-pro-700.woff2') format('woff2');
+  font-display: swap;
+}

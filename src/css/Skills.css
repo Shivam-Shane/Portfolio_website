@@ -1,0 +1,132 @@
+.skills_container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.skills_content {
+  position: relative;                    /* ← required for overlay */
+  overflow: hidden;                      /* ← your original + clips GIF edges cleanly */
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills_content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ─────── GIF HOVER EFFECT (only these lines are new) ─────── */
+.skills_gif-overlay {
+  
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skills_content:hover .skills_gif-overlay {
+  opacity: 1;
+}
+
+.skills_gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65) blur(1px);
+}
+
+.skills_title,
+.skills_box {
+  position: relative;
+  z-index: 2;                           /* keeps text perfectly on top */
+}
+/* ────────────────── END OF NEW CODE ────────────────── */
+
+.skills_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.skills_box {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 1rem;
+}
+
+.skills_data {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.skills_icon {
+  font-size: 1rem;
+  color: var(--title-color);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills_level {
+  font-size: var(--tiny-font-size);
+}
+
+/* ─────── ALL YOUR ORIGINAL MEDIA QUERIES (unchanged) ─────── */
+@media screen and (max-width: 992px) {
+  .skills_content {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills_container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+
+  .skills_content {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .skills_content {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skills_box {
+    column-gap: 1.25rem;
+  }
+
+  .skills_name {
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .skills_content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 255px) {
+  .skills_box {
+    grid-template-columns: 1fr;
+  }
+}

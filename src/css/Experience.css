@@ -1,0 +1,208 @@
+.resume_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.resume_heading {
+  font-size: calc(var(--h3-font-size) * 0.9);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+  margin-left: var(--mb-0-25);
+  display: flex;
+  align-items: center;
+}
+
+.resume_icon {
+  font-size: 1.4rem;
+  margin-right: var(--mb-0-25);
+  color: var(--title-color);
+}
+
+.resume_sub_container {
+  display: flex;
+  margin-left: var(--mb-1-5);
+  align-items: flex-start;
+}
+
+.resume_rounded {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.resume_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--title-color);
+  transform: translate(5.5px, -6px);
+}
+
+.education_container,
+.work_container {
+  margin-left: var(--mb-0-75);
+  padding-right: 1rem;
+}
+
+.education_title,
+.work_title {
+  font-size: calc(var(--normal-font-size) * 0.95);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.5rem;
+}
+
+.education_subtitle,
+.work_subtitle {
+  display: block;
+  font-size: calc(var(--small-font-size) * 0.95);
+  margin-bottom: var(--mb-0-75);
+  color: var(--text-color-light);
+}
+
+.calendar_icon {
+  font-size: calc(var(--smaller-font-size) * 0.9);
+  margin-bottom: var(--mb-0-5);
+  color: var(--title-color);
+}
+/* Make company name look clickable but match existing subtitle sizing */
+.company_link,
+.education_subtitle {
+  display: block;
+  font-size: calc(var(--small-font-size) * 0.95);
+  margin-bottom: var(--mb-0-75);
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+/* link hover/focus styles */
+.company_link:hover,
+.company_link:focus {
+  color: var(--title-color);
+  text-decoration: underline;
+  outline: none;
+}
+
+/* styles for details bullets */
+.resume_details {
+  margin-top: 0.5rem;
+  margin-left: 0.25rem;
+  padding-left: 1rem;
+  list-style: disc;
+  color: var(--text-color);
+  font-size: calc(var(--small-font-size) * 0.92);
+  line-height: 1.35;
+}
+
+.resume_detail_item {
+  margin-bottom: 0.4rem;
+}
+
+/* keep responsive behavior consistent (optional tweaks) */
+@media screen and (max-width: 576px) {
+  .resume_details {
+    font-size: calc(var(--small-font-size) * 0.88);
+    padding-left: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .resume_container {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    max-width: 95%;
+  }
+
+  .resume_sub_container {
+    margin-left: var(--mb-1);
+  }
+
+  .education_container,
+  .work_container {
+    margin-left: var(--mb-0-5);
+    padding-right: 0.5rem;
+  }
+
+  .resume_heading {
+    font-size: calc(var(--h3-font-size) * 0.85);
+  }
+
+  .resume_icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .resume_container {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    max-width: 98%;
+  }
+
+  .resume_heading {
+    font-size: calc(var(--h3-font-size) * 0.8);
+    margin-bottom: 0.8rem;
+  }
+
+  .resume_icon {
+    font-size: 1.2rem;
+  }
+
+  .resume_sub_container {
+    margin-left: var(--mb-0-75);
+  }
+
+  .resume_rounded {
+    width: 10px;
+    height: 10px;
+  }
+
+  .resume_line {
+    transform: translate(4.5px, -5px);
+  }
+
+  .education_title,
+  .work_title {
+    font-size: calc(var(--normal-font-size) * 0.9);
+  }
+
+  .education_subtitle,
+  .work_subtitle {
+    font-size: calc(var(--small-font-size) * 0.9);
+    inline-size: 90%;
+    overflow-wrap: break-word;
+  }
+
+  .calendar_icon {
+    font-size: calc(var(--smaller-font-size) * 0.85);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .resume_container {
+    row-gap: 1rem;
+  }
+
+  .resume_sub_container {
+    margin-left: var(--mb-0-5);
+  }
+
+  .education_title,
+  .work_title {
+    font-size: calc(var(--normal-font-size) * 0.85);
+    inline-size: 95%;
+    overflow-wrap: break-word;
+  }
+
+  .education_subtitle,
+  .work_subtitle {
+    font-size: calc(var(--small-font-size) * 0.85);
+    inline-size: 95%;
+  }
+}

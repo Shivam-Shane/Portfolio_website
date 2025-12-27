@@ -1,0 +1,72 @@
+:root {
+  --nn-line-color: #b86403;
+  --nn-line-width: 2px;
+  --nn-line-glow-color: rgba(247, 185, 72, 0.5);
+  --nn-line-glow-intensity: 80;
+  --nn-node-color: #000102;
+  --nn-node-size: 5px;
+  --nn-dot-color: #f7b948;
+  --nn-dot-size: 6px;
+  --nn-dot-count: 10;
+  --nn-dot-speed-min: 0.003;
+  --nn-dot-speed-max: 0.006;
+  --nn-canvas-padding: 15px;
+  --nn-scale-factor: 0.5;
+}
+
+.neural-canvas {
+  position: absolute;
+  z-index: -1 !important;
+  width: 80%;
+  height: 80%;
+  top: -200px;
+  left: 50px;
+  pointer-events: center;
+  background: transparent; /* Explicitly ensure transparency */
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --nn-node-size: 4px;
+    --nn-dot-size: 2.5px;
+    --nn-line-width: 1.5px;
+    --nn-scale-factor: 0.4;
+    --nn-dot-count: 8;
+  }
+
+
+    .neural-canvas {
+    display: none;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --nn-node-size: 3px;
+    --nn-dot-size: 2px;
+    --nn-line-width: 1px;
+    --nn-scale-factor: 0.35;
+    --nn-dot-count: 6;
+  }
+ 
+    .neural-canvas {
+    display: none;
+    
+    }
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --nn-node-size: 3.5px;
+    --nn-dot-size: 1.5px;
+    --nn-line-width: 1.2px;
+    --nn-scale-factor: 0.5;
+    --nn-dot-count: 5;
+  }
+
+    .neural-canvas {
+    display: none;
+    
+    }
+}

@@ -10,8 +10,6 @@ This portfolio website is designed to provide a professional and concise represe
 
 - **Frontend**: Built with React and Next.js for a fast, responsive, and SEO-friendly experience.
 - **Hosting**: Deployed on Vercel for reliable and scalable hosting.
-- **Portfolio Summarizer API**: A backend API that summarizes the portfolio content and presents it in a professional and generic manner.
-- **Chatbot**: Implemented using Python, LangChain, RAG (Retrieval-Augmented Generation), and an LLM (Large Language Model) to generate responses from a vector store.
 - **Sections**:
   - **Experience**: Highlights my professional journey and past roles.
   - **Projects**: Showcases my key projects with details and links.
@@ -23,11 +21,9 @@ This portfolio website is designed to provide a professional and concise represe
 ## Tech Stack
 
 - **Frontend**: React, Next.js
-- **Backend**: Python (Chatbot), Custom Portfolio Summarizer API
 - **AI/ML**: LangChain, RAG, LLM, Vector Store
 - **Hosting**: Vercel
 - **Styling**: CSS (or any CSS framework you used, e.g., Tailwind CSS)
-- **Data Analytics**: Secure storage for user location and interaction data
 
 ## Installation
 
@@ -35,7 +31,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Shivam-Shane/Portfolio_website.git
+   git clone https://github.com/Shivam-Shane/PORTFOLIO_WEBSITE.git
    
    cd Portfolio_website
    Install dependencies: For the frontend:
@@ -44,24 +40,12 @@ To run this project locally, follow these steps:
     npm run dev
 Open http://localhost:3000 in your browser to view the site.
 
-For **Portfolio Summarizer** API
-[[Visit](https://github.com/Shivam-Shane/Portfolio_Summarizer/blob/main/README.md   )]
-
-
-For **Chatbot Backend** API 
-[[Visit](https://github.com/Shivam-Shane/Portfolio_Backend/blob/main/README.md)]
-
 ## Usage
 
 - Navigate to the live site hosted on Vercel:[[Shivam's Portfolio](https://shivam-portfoliio.vercel.app/)].
 - Explore the *Experience*, *Projects*, and *Skills* sections.
-- Use the *Contact Form* to send me a message.
-- Interact with the *Chatbot* for dynamic responses based on my portfolio content.
-
 ## Privacy Notice
 
-- User location data is collected upon visiting the site.
-- All data is stored securely and used exclusively for analytics purposes to improve the user experience.
 - No personal data is shared with third parties.
 
 ## Contributing
